@@ -13,7 +13,7 @@ import { UserInformationComponent } from './inicio/user-information/user-informa
 import { CursosComponent } from './cursos/cursos.component';
 import { ListaCursosComponent } from './cursos/lista-cursos/lista-cursos.component';
 import { CursoComponent } from './cursos/lista-cursos/curso/curso.component';
-import { ProfesionalesComponent } from './Admin/abm/profesionales/profesionales.component';
+import { AbmComponent } from './Usuarios/abm/abm.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { ProfesionalesComponent } from './Admin/abm/profesionales/profesionales.
     CursosComponent,
     ListaCursosComponent,
     CursoComponent,
-    ProfesionalesComponent,
+    AbmComponent
   
   ],
   imports: [

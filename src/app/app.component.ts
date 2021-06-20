@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { LoginService } from './services/login.service';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +9,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  title = 'app';
+
+  constructor(private route: Router,private _userService: UserService, public _loginService:LoginService){
+
+  }
+
+  ngOnInit(): void {
+    this._userService.getUsers().subscribe((response:any)=>{
+      console.log(response);
+    })
+  }
+
+  logout(){
+    this._loginService.logout();
+    this.route.navigate(['/'])
+  }
+
   menu = [
     {
       nombre:"Inicio",
