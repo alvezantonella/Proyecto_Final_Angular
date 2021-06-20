@@ -1,0 +1,29 @@
+<div class="contaner">
+    <div class="row">
+        <div class="col-md-8 mt-4">
+            <ul class="list-group">
+                <li *ngFor="let prof of profesionalesArray" class="list-group-item list-group-item-action"
+                    (click)="openForEdit(prof)" [class.active]="prof == selectedProfesional">
+                <span class="badge badge-primary">{{ prof.id }}</span> {{ prof.nombre}} - {{ prof.profesion}} 
+                    
+            </li>
+            </ul>
+            <div class="card mt-4">
+                <div class="card-body">
+                    <div class="title">
+                        Agregar un nuevo profesional
+                    </div>
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="selectedProfesional.nombre" placeholder= "Inserte nombre" class="form-control">
+                    </div>    
+                    <div class="form-group">
+                        <input type="text" [(ngModel)]="selectedProfesional.profesion" placeholder= "Inserte profesion" class="form-control">
+                   </div>
+                   <button (click)="addOrEdit()" class="btn btn-primary">Enviar</button>
+                   <button *ngIf="selectedProfesional.id !==0" class="btn btn-danger" (click)="delete()">Borrar</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
