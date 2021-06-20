@@ -14,7 +14,7 @@ export class LoginService {
     console.log(user)
     this._userService.getUsers().subscribe((response:any)=>{
       const data = response;
-      let filter = response.filter(item =>{
+      let filter = response.filter(item:any =>{
         return (item.username == user.username && item.password == user.password)
       });
 
