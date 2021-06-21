@@ -1,14 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from 'src/app/clases/usuarios';
+import { Usuario } from 'src/app/classes/usuario';
 import { UserService } from 'src/app/services/user.service';
 
-
 @Component({
-  selector: 'app-abm',
-  templateUrl: './abm.component.html',
-  styleUrls: ['./abm.component.css']
+  selector: 'app-usuarios',
+  templateUrl: './usuarios.component.html',
+  styleUrls: ['./usuarios.component.css']
 })
-
 export class UsuariosComponent implements OnInit {
   users!:Usuario[];
   showForm = false;

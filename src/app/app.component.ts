@@ -54,8 +54,18 @@ export class AppComponent {
       class:"nav-link"
     },
     {
-      nombre:"Profesionales",
+      nombre:"Gestionar profesionales",
       enlace:"profesionales",
+      class:"nav-link"
+    },
+    {
+      nombre:"Gestionar usuarios",
+      enlace:"usuarios",
+      class:"nav-link"
+    },
+    {
+      nombre:"Login",
+      enlace:"login",
       class:"nav-link"
     }
   ]

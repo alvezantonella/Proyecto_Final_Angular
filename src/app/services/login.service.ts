@@ -14,7 +14,7 @@ export class LoginService {
     console.log(user)
     this._userService.getUsers().subscribe((response:any)=>{
       const data = response;
-      let filter = response.filter(item:any =>{
+      let filter = response.filter((item: { username: any; password: any; }) =>{
         return (item.username == user.username && item.password == user.password)
       });
 
@@ -30,7 +30,7 @@ export class LoginService {
   }
 
   isLogin(){
-    let user = JSON.parse(sessionStorage.getItem("user"));
+    let user = JSON.parse(parseStr(sessionStorage.getItem("user")));
     if(user != null){
       return user;
     }
@@ -40,5 +40,8 @@ export class LoginService {
   getUserRole(){
     return this.isLogin() != 0 ? this.isLogin().user.role: "default"
   }
+}
+function parseStr(arg0: string | null): string {
+  throw new Error('Function not implemented.');
 }
 

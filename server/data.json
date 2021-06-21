@@ -71,7 +71,17 @@
       "username": "Antonella Alvez",
       "password": "12345",
       "role": "Admin"
+    },
+    {
+      "id": 12,
+      "username": "Carajol",
+      "password": "Precioso",
+      "role": "Admin"
     }
   ],
-  "products": []
+
+  
+  "products": [
+
+  ]
 }

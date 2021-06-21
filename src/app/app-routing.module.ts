@@ -8,7 +8,8 @@ import { CursosComponent } from './cursos/cursos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
 import { UserInformationComponent } from './inicio/user-information/user-information.component';
-import { AbmComponent } from './Usuarios/abm/abm.component';
+import { ProfesionalesComponent } from './Admin/abm/profesionales/profesionales.component';
+import { UsuariosComponent } from './Usuarios/usuarios.component'
 
 
 
@@ -20,7 +21,10 @@ const routes: Routes = [
   {path: 'contacto', component: ContactoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'user_information', component: UserInformationComponent},
-  {path: 'abm.component', component: AbmComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'profesionales', component: ProfesionalesComponent},
+  {path: 'usuarios', component: UsuariosComponent}
+  
 ]
 
 @NgModule({

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +15,9 @@ import { UserInformationComponent } from './inicio/user-information/user-informa
 import { CursosComponent } from './cursos/cursos.component';
 import { ListaCursosComponent } from './cursos/lista-cursos/lista-cursos.component';
 import { CursoComponent } from './cursos/lista-cursos/curso/curso.component';
-import { AbmComponent } from './Usuarios/abm/abm.component';
+import { ProfesionalesComponent } from './Admin/abm/profesionales/profesionales.component';
+import { UsuariosComponent } from './Usuarios/usuarios.component';
+
 
 @NgModule({
   declarations: [
@@ -27,18 +31,20 @@ import { AbmComponent } from './Usuarios/abm/abm.component';
     CursosComponent,
     ListaCursosComponent,
     CursoComponent,
-    AbmComponent
-  
+    UsuariosComponent,
+    ProfesionalesComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    HttpClientModule
+  ],
   bootstrap: [AppComponent]
-
-  
 })
 export class AppModule { }
 
