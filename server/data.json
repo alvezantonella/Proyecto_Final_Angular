@@ -2,86 +2,69 @@
   "users": [
     {
       "id": 1,
-      "username": "admin",
-      "password": "admin",
-      "role": "Admin"
-    },
-    {
-      "id": 1,
-      "username": "user",
-      "password": "user",
-      "role": "user"
-    },
-    {
-      "id": 2,
-      "username": "p89dominguez@gmail.com",
-      "password": "efshjht",
-      "role": "Usuario"
-    },
-    {
-      "id": 3,
-      "username": "inc@gointeraction.biz",
-      "password": "djrsghkyrk",
-      "role": "Usuario"
-    },
-    {
-      "id": 4,
-      "username": "pedroed",
-      "password": "lolo",
-      "role": "Admin"
-    },
-    {
-      "id": 5,
-      "username": "pedroedsgghj@drf.com",
-      "password": "sryi",
-      "role": "Admin"
-    },
-    {
-      "id": 6,
-      "username": "pedroed",
-      "password": "sryi",
-      "role": "Admin"
-    },
-    {
-      "id": 7,
-      "username": "pedroe88",
-      "password": "sryi",
-      "role": "Usuario"
-    },
-    {
-      "id": 8,
-      "username": "pedroe00",
-      "password": "sryi",
-      "role": "Usuario"
-    },
-    {
-      "id": 9,
-      "username": "Kaduo99",
-      "password": "drtjykul",
-      "role": "Usuario"
-    },
-    {
-      "id": 10,
-      "username": "p89dominguez@gmail.com",
-      "password": "ftukiotufdou",
-      "role": "Usuario"
-    },
-    {
-      "id": 11,
-      "username": "Antonella Alvez",
+      "username": "Anabella Rodriguez",
       "password": "12345",
       "role": "Admin"
     },
     {
-      "id": 12,
-      "username": "Carajol",
-      "password": "Precioso",
+      "id": 2,
+      "username": "Esteban Antunez",
+      "password": "7686798",
+      "role": "Admin"
+    },
+    {
+      "id": 3,
+      "username": "Andrea Perez",
+      "password": "0985",
+      "role": "Admin"
+    },
+    {
+      "id": 4,
+      "username": "Gonzalo Castillo",
+      "password": "holamundo",
+      "role": "Admin"
+    },
+    {
+      "id": 5,
+      "username": "Cleyber Kurt",
+      "password": "896",
+      "role": "Usuario"
+    },
+    {
+      "id": 6,
+      "username": "Sebastian Goncalves",
+      "password": "23567",
+      "role": "Usuario"
+    },
+    {
+      "id": 7,
+      "username": "Crhistian Moreira",
+      "password": "67843",
+      "role": "Admin"
+    },
+    {
+      "id": 8,
+      "username": "Mathias Ribero",
+      "password": "25256",
+      "role": "Usuario"
+    },
+    {
+      "id": 9,
+      "username": "Josefina Ristori",
+      "password": "6784",
+      "role": "Admin"
+    },
+    {
+      "id": 10,
+      "username": "Andreina Zurd",
+      "password": "567678",
+      "role": "Admin"
+    },
+    {
+      "id": 11,
+      "username": "ad",
+      "password": "sdf",
       "role": "Admin"
     }
-  ],
-
-  
-  "products": [
-
   ]
 }

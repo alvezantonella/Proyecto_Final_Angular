@@ -3,6 +3,8 @@ export class Usuario {
   username:string;
   password:string;
   role:string;
+
+  
   constructor(){
   this.id="";
   this.username="";

@@ -8,7 +8,8 @@
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "server": "json-server --watch server/data.json"
+        "server": "json-server --watch server/data-users.json"
+        
     },
     "private": true,
     "dependencies": {

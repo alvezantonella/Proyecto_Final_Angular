@@ -1,13 +1,18 @@
 export class Profesional {
     id: number;
-    nombre: string;
+    username: string;
     profesion: string;
-    costo: number;
+    age: number
+    cost: number;
+    role: string;
+
 
     constructor(){
         this.id = 0;
-        this.nombre = "";
+        this.username = "";
+        this.age = 0
         this.profesion = "";
-        this.costo = 0;
+        this.cost = 0;
+        this.role = ""
     }
 }
