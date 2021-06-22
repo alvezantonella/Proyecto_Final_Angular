@@ -65,6 +65,81 @@
       "username": "ad",
       "password": "sdf",
       "role": "Admin"
+    },
+    {
+      "id": 12,
+      "username": "4798432@psico",
+      "password": "rgefghbfhf",
+      "role": "Admin"
+    }
+  ],
+  "profesionales": [
+    {
+      "id": 1,
+      "username": "Anabella Rodriguez",
+      "profesion": "Psicologa Clinica",
+      "age": 0,
+      "cost": 0
+    },
+    {
+      "id": 2,
+      "username": "Esteban Antunez",
+      "profesion": "Psicologo Forense",
+      "age": 0,
+      "cost": 0
+    },
+    {
+      "id": 3,
+      "usern3me": "Andrea Perez",
+      "profesion": "Psicologa Social",
+      "age": 0,
+      "cost": 0
+    },
+    {
+      "id": 4,
+      "username": "Gonzalo Castillo",
+      "profesion": "Psicologo Clinico",
+      "age": 0,
+      "cost": 0
+    }
+  ],
+
+  "cursos": [
+    {
+      "imagen": "../../../assets/1.jpg",
+      "title": "s",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa repellat repellendus voluptas sequi tempora eveniet ullam recusandae iusto quisquam, vero doloremque esse aliquam perspiciatis officiis reprehenderit velit beatae magni non nemo, at accusamus, optio eos! Odit adipisci eius architecto labore distinctio nobis, excepturi iste tempora aliquam aperiam exercitationem culpa voluptates ducimus sunt velit.",
+      "cost": "$200",
+      "date": 0
+    },
+
+    {
+      "imagen": "../../../assets/1.jpg",
+      "title": "s",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa repellat repellendus voluptas sequi tempora eveniet ullam recusandae iusto quisquam, vero doloremque esse aliquam perspiciatis officiis reprehenderit velit beatae magni non nemo, at accusamus, optio eos! Odit adipisci eius architecto labore distinctio nobis, excepturi iste tempora aliquam aperiam exercitationem culpa voluptates ducimus sunt velit.",
+      "cost": "$200",
+      "date": 0
+    },
+    {
+      "imagen": "../../../assets/1.jpg",
+      "title": "s",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa repellat repellendus voluptas sequi tempora eveniet ullam recusandae iusto quisquam, vero doloremque esse aliquam perspiciatis officiis reprehenderit velit beatae magni non nemo, at accusamus, optio eos! Odit adipisci eius architecto labore distinctio nobis, excepturi iste tempora aliquam aperiam exercitationem culpa voluptates ducimus sunt velit.",
+      "cost": "$200",
+      "date": 0
+    },
+    {
+      "imagen": "../../../assets/1.jpg",
+      "title": "s",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa repellat repellendus voluptas sequi tempora eveniet ullam recusandae iusto quisquam, vero doloremque esse aliquam perspiciatis officiis reprehenderit velit beatae magni non nemo, at accusamus, optio eos! Odit adipisci eius architecto labore distinctio nobis, excepturi iste tempora aliquam aperiam exercitationem culpa voluptates ducimus sunt velit.",
+      "cost": "$200",
+      "date": 0
+    },
+    {
+      "imagen": "../../../assets/1.jpg",
+      "title": "s",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ipsa repellat repellendus voluptas sequi tempora eveniet ullam recusandae iusto quisquam, vero doloremque esse aliquam perspiciatis officiis reprehenderit velit beatae magni non nemo, at accusamus, optio eos! Odit adipisci eius architecto labore distinctio nobis, excepturi iste tempora aliquam aperiam exercitationem culpa voluptates ducimus sunt velit.",
+      "cost": "$200",
+      "date": 0
     }
   ]
 }

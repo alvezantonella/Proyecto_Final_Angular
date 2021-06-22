@@ -85,4 +85,22 @@ export class UsuariosComponent implements OnInit {
   hide(){
     this.opResult.success = true
   }
+
+  selectedProfesional: Usuario = new Usuario();
+
+ /* addOrEdit() {
+    if (this.selectedProfesional.id === ) {
+      this.selectedProfesional.id = this.users.length + 1;
+      this.users.push(this.selectedProfesional);
+    }
+    this.selectedProfesional = new Usuario();
+  }
+
+
+  delete() {
+    if (confirm('Estas seguro que quieres eliminarlo?')) {
+      this.users = this.users.filter(p => p != this.selectedProfesional);
+      this.selectedProfesional = new Usuario();
+    }
+  }*/
 }

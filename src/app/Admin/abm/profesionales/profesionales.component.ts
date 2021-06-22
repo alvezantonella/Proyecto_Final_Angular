@@ -1,6 +1,7 @@
   
 import { Component, OnInit } from '@angular/core';
 import { Profesional } from '../profesional';
+import { ServiceService } from '../service.service';
 
 
 @Component({
@@ -8,18 +9,22 @@ import { Profesional } from '../profesional';
   templateUrl: './profesionales.component.html',
   styleUrls: ['./profesionales.component.css']
 })
-export class ProfesionalesComponent {
+export class ProfesionalesComponent implements OnInit {
   profesionalesArray: Profesional[] = [
-
-    { id: 1, username: "Anabella Rodriguez", profesion: "Psicologa Clinico", age: 34, cost: 500, role: "Admin" },
-    { id: 1, username: "Mathias Ribero", profesion: "Psicologa Criminal", age: 45, cost: 900, role: "Sin permisos" },
-    { id: 1, username: "Andrea Perez", profesion: "Psicologa Social", age: 39, cost: 1200, role: "Sin permisos" },
-    { id: 1, username: "Josefina Ristori", profesion: "Psicologa Criminal", age: 36, cost: 850, role: "Sin permisos" },
-    { id: 1, username: "Esteban Antunez", profesion: "Psicologo Forense", age: 32, cost: 980, role: "Sin permisos" },
 
   ];
 
   selectedProfesional: Profesional = new Profesional();
+
+  constructor(private profesionales: ServiceService){
+
+  }
+  ngOnInit(): void {
+    this.profesionales.getProfesionales().subscribe((response:any)=>{
+      this.profesionalesArray = response;
+      console.log(this.profesionalesArray);
+    })
+  }
 
   addOrEdit() {
     if (this.selectedProfesional.id === 0) {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Cursos } from 'src/app/clase/cursos';
+import { ServicesService } from 'src/app/clase/services.service';
 
 @Component({
   selector: 'app-lista-cursos',
@@ -6,7 +8,45 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lista-cursos.component.css']
 })
 export class ListaCursosComponent implements OnInit {
-  cursos = [
+  coursesArray: Cursos[] = [
+  
+    ];
+  
+    selectedCursos: Cursos = new Cursos();
+  
+    constructor(private cursos: ServicesService){
+  
+    }
+    ngOnInit(): void {
+      this.cursos.getCursos().subscribe((response:any)=>{
+        console.log(response);
+        this.coursesArray = response;
+        
+      })
+    }
+
+
+  
+    addOrEdit() {
+      if (this.selectedCursos.id === 0) {
+        this.selectedCursos.id = this.coursesArray.length + 1;
+        this.coursesArray.push(this.selectedCursos);
+      }
+      this.selectedCursos = new Cursos();
+    }
+  
+    openForEdit(cursosx2: Cursos) {
+      this.selectedCursos = cursosx2;
+    }
+  
+    delete() {
+      if (confirm('Estas seguro que quieres eliminarlo?')) {
+        this.coursesArray = this.coursesArray.filter(p => p != this.selectedCursos);
+        this.selectedCursos = new Cursos();
+      }
+    }
+  }
+ /* cursos = [
     {
       imagen: "../../../assets/1.jpg",
       titulo: "Psicoanalisis",
@@ -32,10 +72,5 @@ export class ListaCursosComponent implements OnInit {
       descripcion: "    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, cumque quos? Nobis porro excepturi hic magnam ut explicabo sint suscipit non corporis fuga, est at, ab tempora animi aspernatur molestias. Ex dolores temporibus nesciunt maiores amet",
       precio: "$500"
     }
-  ]
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+  ]*/
+  
