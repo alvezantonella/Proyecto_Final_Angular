@@ -1,5 +1,4 @@
-<div class="card" style="width: 18rem;" (click)="openForEdit(curso)"
-  [class.active]="curso == selectedCursos">
+<div class="card" style="width: 18rem;">
   <img [src]="curso.imagen" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">{{curso.title}}</h5>
@@ -9,10 +8,7 @@
     <li class="list-group-item">{{curso.cost}}</li>
   </ul>
   <div class="card-body">
-    <a href="#" class="btn btn-primary">Me interesa!</a>
+    <a href="#" (click)="addCart(curso)" class="btn btn-primary card-link"><i class="bi bi-cart">Me interesa!</i></a>
   </div>
 </div>
-<div>
-  <button (click)="addOrEdit()" class="btn btn-primary">Enviar</button>
-  <button *ngIf="selectedCursos.id !==0" class="btn btn-danger" (click)="delete()">Borrar</button>
-</div>
+<!--En addCart, debo ir a curso component (producto component profe) y ver la funcion para linquearla y que la lleve a facturacion.-->

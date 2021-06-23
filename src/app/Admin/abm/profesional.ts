@@ -3,7 +3,7 @@ export class Profesional {
     username: string;
     profesion: string;
     age: number
-    cost: number;
+    cost: string;
     role: string;
 
 
@@ -12,7 +12,7 @@ export class Profesional {
         this.username = "";
         this.age = 0
         this.profesion = "";
-        this.cost = 0;
+        this.cost = "";
         this.role = ""
     }
 }

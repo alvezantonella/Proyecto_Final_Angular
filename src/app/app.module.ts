@@ -7,7 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { ConsultasComponent } from './consultas/consultas.component';
 import { TerapiasComponent } from './terapias/terapias.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { LoginComponent } from './login/login.component';
@@ -17,13 +16,13 @@ import { ListaCursosComponent } from './cursos/lista-cursos/lista-cursos.compone
 import { CursoComponent } from './cursos/lista-cursos/curso/curso.component';
 import { ProfesionalesComponent } from './Admin/abm/profesionales/profesionales.component';
 import { UsuariosComponent } from './Usuarios/usuarios.component';
+import { FacturacionComponent } from './facturacion/facturacion.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     InicioComponent,
-    ConsultasComponent,
     TerapiasComponent,
     ContactoComponent,
     LoginComponent,
@@ -33,6 +32,7 @@ import { UsuariosComponent } from './Usuarios/usuarios.component';
     CursoComponent,
     UsuariosComponent,
     ProfesionalesComponent,
+    FacturacionComponent,
   ],
 
   imports: [

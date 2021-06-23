@@ -1,47 +1,43 @@
 import { Injectable } from '@angular/core';
 import { UserService } from './user.service';
 
-
 @Injectable({
   providedIn: 'root'
 })
+
 export class LoginService {
-  private _isLogin:boolean = false;
+  private _isLogin: boolean = false;
 
   constructor(private _userService: UserService) { }
 
-  login(user:any){
+  login(user: any) {
     console.log(user)
-    this._userService.getUsers().subscribe((response:any)=>{
+    this._userService.getUsers().subscribe((response: any) => {
       const data = response;
-      let filter = response.filter((item: { username: any; password: any; }) =>{
+      let filter = response.filter((item: { username: any; password: any; }) => {
         return (item.username == user.username && item.password == user.password)
       });
 
       if (filter.length > 0) {
-        let usr = {"user":filter[0]}
-        sessionStorage.setItem("user",JSON.stringify(usr));
+        let usr = { "user": filter[0] }
+        sessionStorage.setItem("user", JSON.stringify(usr));
       }
     });
   }
 
-  logout(){
+  logout() {
     sessionStorage.removeItem("user");
   }
 
-  isLogin(){
-    let user = JSON.parse(parseStr(sessionStorage.getItem("user")));
-    if(user != null){
+  isLogin() {
+    let user = JSON.parse(sessionStorage.getItem("user") || '{}');
+    if (user != null) {
       return user;
     }
     return 0;
   }
 
-  getUserRole(){
-    return this.isLogin() != 0 ? this.isLogin().user.role: "default"
+  getUserRole() {
+    return this.isLogin() != 0 ? this.isLogin().user.role : "default"
   }
 }
-function parseStr(arg0: string | null): string {
-  throw new Error('Function not implemented.');
-}
-

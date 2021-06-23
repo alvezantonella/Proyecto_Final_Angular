@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Usuario } from 'src/app/classes/usuario';
+import { Usuario } from 'src/app/Usuarios/classes/usuario';
 import { UserService } from 'src/app/services/user.service';
 
 @Component({
@@ -28,11 +28,13 @@ export class UsuariosComponent implements OnInit {
   opResultMsg ="";
   constructor(private _userService: UserService) { }
 
+  
   ngOnInit(): void {
     this._userService.getUsers().subscribe((response:any)=>{
       this.users = response;
     })
   }
+
 
   fnShowForm(){
     this.showForm = !this.showForm;

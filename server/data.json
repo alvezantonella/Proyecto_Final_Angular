@@ -71,6 +71,12 @@
       "username": "4798432@psico",
       "password": "rgefghbfhf",
       "role": "Admin"
+    },
+    {
+      "id": 13,
+      "username": "Anabella Rodriguez",
+      "password": "12345",
+      "role": "Admin"
     }
   ],
   "profesionales": [
@@ -78,32 +84,33 @@
       "id": 1,
       "username": "Anabella Rodriguez",
       "profesion": "Psicologa Clinica",
-      "age": 0,
-      "cost": 0
+      "age": 35,
+      "cost": "$700"
     },
     {
       "id": 2,
       "username": "Esteban Antunez",
       "profesion": "Psicologo Forense",
-      "age": 0,
-      "cost": 0
+      "age": 41,
+      "cost": "$1250"
     },
     {
       "id": 3,
-      "usern3me": "Andrea Perez",
+      "username": "Andrea Perez",
       "profesion": "Psicologa Social",
-      "age": 0,
-      "cost": 0
+      "age": 28,
+      "cost": "$690"
     },
     {
       "id": 4,
       "username": "Gonzalo Castillo",
       "profesion": "Psicologo Clinico",
-      "age": 0,
-      "cost": 0
+      "age": 36,
+      "cost": "$1600"
     }
   ],
 
+  
   "cursos": [
     {
       "imagen": "../../../assets/1.jpg",
@@ -112,7 +119,6 @@
       "cost": "$200",
       "date": 0
     },
-
     {
       "imagen": "../../../assets/1.jpg",
       "title": "s",

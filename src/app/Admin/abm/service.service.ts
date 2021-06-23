@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Cursos } from 'src/app/clase/cursos';
+import { Cursos } from 'src/app/cursos/clase/cursos';
 import { Profesional } from './profesional';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServiceService {
+  
   getCursos() {
     return this._http.get<Cursos>(this.url);
   }

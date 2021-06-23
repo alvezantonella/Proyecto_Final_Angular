@@ -29,6 +29,16 @@ export class AppComponent {
 
   menu = [
     {
+      nombre:"Gestionar profesionales",
+      enlace:"profesionales",
+      class:"nav-link"
+    },
+    {
+      nombre:"Gestionar usuarios",
+      enlace:"usuarios",
+      class:"nav-link"
+    },
+    {
       nombre:"Inicio",
       enlace:"inicio",
       class:"nav-link active"
@@ -44,29 +54,14 @@ export class AppComponent {
       class:"nav-link"
     },
     {
-      nombre:"Consultas",
-      enlace:"consultas",
-      class:"nav-link"
-    },
-    {
       nombre:"Contactanos",
       enlace:"contacto",
       class:"nav-link"
     },
     {
-      nombre:"Gestionar profesionales",
-      enlace:"profesionales",
+      nombre:"Facturacion",
+      enlace:"facturacion",
       class:"nav-link"
     },
-    {
-      nombre:"Gestionar usuarios",
-      enlace:"usuarios",
-      class:"nav-link"
-    },
-    {
-      nombre:"Login",
-      enlace:"login",
-      class:"nav-link"
-    }
   ]
 }
